@@ -1,0 +1,388 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url("../img/body_background.jpeg");
+	font-family: "vdl-penletter", sans-serif;
+	font-weight: 1000;
+	font-style: normal;
+	margin: 0;
+}
+
+/* コンテンツ幅 */
+#container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* ヘッダー */
+header {
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	background-color: #efe8dc;
+	display:flex;
+	align-items: center;
+	top: 0;
+	z-index: 1000;
+}
+
+#logo {
+	float: left;
+	padding-top: 10px;
+	margin-left: 60px;
+}
+
+#logo img:hover {
+	opacity: 0.3; 
+
+}
+	
+header ul {
+	display:flex;
+	list-style:none;
+	margin-right: 80px;
+}
+
+header li { 
+   margin-left:40px;
+   font-size: 20px;
+}
+
+a {
+	text-decoration:none;
+	color:#333;
+}
+
+a:hover {
+	color:#fff;
+}
+
+nav {
+	margin-left:auto;
+}
+
+/* メインビジュアル */
+
+.slider {
+	width: 90%;
+	height: auto;
+    margin: 0 auto;
+	padding: 0;
+}
+
+.slider img {
+    width: 50vw;
+    height:auto;
+	margin: 120px 20px 10px 20px;
+}
+
+.slider .slick-slide {
+	transform: scale(1);/*左右の画像のサイズを80%に*/
+	transition: all .3s;/*拡大や透過のアニメーションを0.3秒で行う*/
+	opacity: 0.7;/*透過80%*/
+}
+  
+.slider .slick-slide.slick-center{
+	transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+	opacity: 1;/*透過なし*/
+}
+
+/*ドットナビゲーションの設定*/
+.slick-dots {
+    text-align: center;
+  	margin: 20px 0 0;
+}
+
+.slick-dots li {
+    display: inline-block;
+  	margin: 0 10px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width: 5px;/*ドットボタンのサイズ*/
+    height: 5px;/*ドットボタンのサイズ*/
+    display: block;
+    border-radius: 50%;
+    background: #ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background: #333;/*ドットボタンの現在地表示の色*/
+}
+
+/* About */
+#about {
+	display: block;
+	width: 1000px;
+	margin: 0 auto;
+	margin-bottom: 200px;
+	background-image: url("../img/about_background.jpeg")
+}
+
+#about_headline {
+	text-align: center;
+	padding-top: 200px;
+    margin-top: -100px;
+}
+
+#about_content {
+	margin: 20px;
+}
+
+
+#about_text {
+	display: flex;	
+	margin-left: 20px;
+}
+
+#about_text img {
+  	width: 350px;
+  	height: auto;
+  	margin: 50px 20px 10px 25px;
+}
+
+#about_text p {
+  	padding: 0;
+  	margin: 80px 20px 20px 20px;
+}
+
+#concept {
+  	margin-top: 20px;;
+}
+
+#concept h2 {
+  	margin: 50px 0 10px 50px;
+}
+
+#concept ol {
+	margin-top: 30px;
+	margin-left: 100px;
+}
+
+#concept ol li {
+	margin: 0px 20px 30px 50px;
+}
+
+
+#staff img {
+	width: 400px;
+	height: 200px;
+	margin: 50px 25px 70px 55px;
+}
+
+#staff h2 {
+	margin: 50px 0 10px 50px;
+}
+
+#staff_pf {
+	display: flex;
+}
+
+#staff_text {
+	margin: 10px 20px 70px 60px;
+}
+
+#style {
+	margin-bottom: 300px;
+}
+
+#style_headline{
+	text-align: center;
+	padding-top: 100px;
+    margin-top: -100px;
+}
+
+.style_list{
+	text-align: center;
+}
+
+.style_photo {
+	width: 200px;
+	padding: 20px;
+	background-clip: #fff;
+}
+
+.style_list img:hover { 
+	opacity: 0.8; 
+}
+
+#menu {
+	display: block;
+	width: 1000px;
+	margin: 50px auto 300px;
+	background-image: url("../img/menu_background.jpeg")
+}
+
+.menu_contents {
+	padding: 10px;
+}
+
+#menu_headline {
+	text-align: center;
+	padding-top: 100px;
+    margin-top: -100px;
+}
+
+#all_menu {
+	display: flex;
+}
+
+#menu_left {
+	margin-left: 60px;
+	flex: 1;
+}
+
+#menu_right {
+	margin-right: 30px;
+	flex: 1;
+}
+
+.menu_subheading {
+	display: flex;
+}
+
+.menu_icon {
+	height: 40px;
+	width: auto;
+	display: block;
+	align-self: center;
+}
+
+.subheading {
+	align-self: center;
+	margin-left: 20px;
+}
+
+.menu_list {
+	list-style: none;
+}
+
+.menu_list li {
+	padding-bottom: 30px;	
+}
+
+#fulvic {
+	width: 450px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	background-color: #e7d0a9;
+}
+
+#fulvic_text {
+	margin: 20px;
+}
+
+#fulvic_headline {
+	text-align: left;
+	padding: 10px 0 0 0;
+}
+
+#fulvic p {
+	text-align: left;
+	padding: 5px 20px 25px 15px;
+}
+
+#pay {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+#pay img {
+	width: 70px;
+	height: auto;
+	padding: 0 30px;
+	align-self: center;
+}
+
+#reserve_headline {
+	text-align: center;
+	padding-top: 100px;
+    margin-top: -100px;
+}
+
+#reserve {
+	width: 1000px;
+	margin-bottom: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#reserve_detail {
+	display: flex;
+	margin-bottom: 40px;
+	justify-content: center;
+}
+
+#reserve_detail img:hover {
+	opacity: 0.7; 
+}
+
+#reserve_link {
+	padding: 10px;
+	width: 500px;
+	flex: 1;
+	margin-left: 70px;
+}
+
+#reserve_time {
+	padding: 10px;
+	width: 500px;
+	flex: 1;
+	margin-right: 30px;
+}
+
+#message {
+	text-align: center;
+}
+
+#store_photo {
+	display: flex;
+	justify-content: center;
+}
+
+#store_photo img {
+	padding: 20px;
+	width: 415px;
+	height: 250px;
+}
+
+#access {
+	margin-bottom: 100px;
+}
+
+#access_headline {
+	text-align: center;
+	padding-top: 100px;
+   	margin-top: -100px;
+}
+
+#access_detail {
+	display: flex;
+	padding: 20px;
+	justify-content: center;
+}
+
+#tel_add {
+	padding: 20px;
+	margin-left: 30px;
+}
+
+#map {
+	padding: 20px;
+	margin-left: 100px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    margin: 100px auto auto;
+    text-align: center;
+}
+
+
+
+
